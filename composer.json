@@ -1,0 +1,16 @@
+{
+    "require": {
+        "slim/slim": "~2.0",
+        "doctrine/orm": "2.4.2",
+        "symfony/http-foundation": "^2.7",
+        "jms/serializer": "^0.16.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skeleton\\Controller\\": "src/controllers",
+            "Skeleton\\Resource\\": "src/resources",
+            "Skeleton\\Entity\\": "src/entities",
+            "Skeleton\\Repository\\": "src/repositories"
+        }
+    }
+}
