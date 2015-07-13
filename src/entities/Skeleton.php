@@ -15,17 +15,12 @@ use Doctrine\ORM\Mapping;
  */
 class OperatingUnit
 {
-
-    public $allowedFields = [
-        "skeleton"
-    ];
-
     /**
      * @var string
      * @Id
-     * @Column(name="id", type="string", length=64)
+     * @Column(name="skeleton", type="string", length=64)
      */
-    protected $id;
+    protected $skeleton;
 
     public function setSkeleton($skeleton)
     {

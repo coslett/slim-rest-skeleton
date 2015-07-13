@@ -54,24 +54,4 @@ class BaseResource
     {
         return $this->entity;
     }
-
-    /*
-        Takes in an object (entity) and uses the allowedFields variable in that entity
-        to determine 1. if the entity contains a getter for it, and if so sets it to an
-        array for encoding later on.
-    */
-    public function convertToArray($object) {
-        
-        $allowedFields = $object->allowedFields;
-
-        foreach ($object->allowedFields as $field) {
-            $method = "get" . $field;
-
-            if ($object->$method()) {
-                $array[$field] = $object->$method();
-            }
-        }
-
-        return $array;
-    }    
 }

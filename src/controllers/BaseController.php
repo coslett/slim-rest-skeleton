@@ -1,5 +1,5 @@
 <?php
-namespace DomainHomes\Controller;
+namespace Skeleton\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -11,7 +11,6 @@ class BaseController {
     protected $repository;
     protected $resource;
     protected $request;
-    protected $app;
 
     public function __construct()
     {

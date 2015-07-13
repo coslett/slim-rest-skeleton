@@ -8,7 +8,11 @@
     ]);
 
     /**
-     * @todo  A more advanced form of authentication
+     * @todo  Convert to OAuth
+     *
+     * I do not recommend using this as your authentication method
+     * but it is a way that you can for the time being protect
+     * your API (though request from JavaScript would show the key)
      */
     $app->hook('slim.before', function () use ($app){
 

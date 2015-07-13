@@ -55,7 +55,9 @@ class SkeletonRepository extends EntityRepository
             }
         }
 
-        $result = $qb->getQuery()->getArrayResult();
+        $qb->setMaxResults('1');
+
+        $result = $qb->getQuery()->getResult();
         if (isset($result[0])) {
             return $result[0];
         } else
